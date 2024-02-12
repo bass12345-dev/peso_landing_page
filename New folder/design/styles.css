@@ -41,6 +41,7 @@ body{
 	height: 120px;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
 
 
@@ -99,10 +100,12 @@ img.top-logo {
 
 
 .below-header {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	font-family: "Inter", sans-serif;
+	text-align: center;
+/*	display: flex;
+	align-items: center;
+	justify-content: center;*/
+
 }
 
 .office-city-mayor{
@@ -260,8 +263,106 @@ p.capital {
     color: #fff;
 }
 
+.timeline {
+	position: relative;
+	max-width: 100%;
+	margin: 100px auto;
+
+
+	
+}
+
+.timeline-container {
+/*	padding: 10px 50px;*/
+	padding-top: 10px;
+	position: relative;
+	width: 50%;
+	filter: drop-shadow(3px 3px 2px #000);
+
+	
+}
+
+.timeline-textbox {
+
+	padding: 20px 30px;
+	background: #fff;
+	position: relative;
+	border-radius: 6px;
+	font-size: 15px;
+	text-align: center;
+	font-family: "Inter", sans-serif;
+}
+
+.timeline-textbox img {
+
+	height: 100%;
+	width: 100%;
+}
+
+.timeline-textbox h4 {
+
+	font-size: 30px;
+	color: #a86008;
+	filter: drop-shadow(3px 3px 2px #000);
+}
+
+.right-container {
+	left: 50%;
+
+}
+
+.left-container {
+	left: 0;
+}
+
+.timeline-container .center-img {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: -20px;
+	top: 32px;
+	z-index: 10;
+}
+
+
+.right-container  .center-img {
+	left: -20px;
+}
+
+/*.timeline-container::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 100%;
+	background: #fff;
+	top: 0;
+
+
+	margin-left: -3px;
+	z-index: -1;
+
+}*/
+
+
+.footer {
+	margin-bottom: 10px;
+	text-align: center;
+	padding: 20px;
+	color: #fff;
+	font-family: "Inter", sans-serif;
+}
+
 
 @media screen and (max-width:768px) {
+
+	.timeline {
+		margin: 50px auto;
+	}
+
+	.timeline::after {
+		left: 31px;
+	}
+
   .card {
     all: unset;
     border-radius: 4px;
@@ -352,6 +453,7 @@ p.capital {
 
 .below-header h2{
 	font-size: 13px;
+
 }
 
 
@@ -390,4 +492,12 @@ p.capital {
 	display: none;
 }
 
+.timeline-container  {
+	all: unset;
+
 }
+
+
+
+}
+
